@@ -1,13 +1,13 @@
 function geekshubs(number) {
     let printedNumbers = "";
     for(let i=1; i<=number; i++){
-        printedNumbers += numberToPrint(i);
-        printedNumbers += "\n"
+        printedNumbers += numberToPrint(i)+"\n";
     }
-    console.log(printedNumbers)
     return printedNumbers;
 }
+
 function numberToPrint(number){
+    
     const isDivisible = (num,divider) => num % divider == 0;
 
     if(isDivisible(number,3) && isDivisible(number,5)){
